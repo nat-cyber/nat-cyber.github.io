@@ -4,18 +4,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>MEDAPP</title>
 <style>
-.btn {
-  background-color: Green;
-  border: none;
-  color: white;
-  padding: 12px 16px;
-  font-size: 16px;
-  cursor: pointer;
+body {margin:0;}
+
+.icon-bar {
+  width: 80%;
+  background-color: #555;
+  overflow: auto;
 }
 
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: Black;
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
 }
       </style> 
      <style>
@@ -78,10 +90,12 @@
   </head>
   <body>
 <h1 style="color:green"><i>medApp</i></h1>
-    <hr />
-<a href="https://nat-cyber.github.io"><button class="btn"><i class="fa fa-home"></i></button></a>
-<button class="btn"><i class="fa fa-bars"></i></button>
-<button class="btn"><i class="fa fa-folder"></i></button>
+    <div class="icon-bar" align="centre">
+<a class="active" href="https://nat-cyber.github.io"><i class="fa fa-home"></i></a>
+<a class="active" href="#"><i class="fa fa-bars"></i></a>
+<a class="active" href="#"><i class="fa fa-globe"></i></a>
+<a class="active" href="#"><i class="fa fa-envelope"</i></a>
+<a class="active" href="#"><i class="fa fa-folder"></i></a>
    
                                            
     <h3><div class="search-box">
