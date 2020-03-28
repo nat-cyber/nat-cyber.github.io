@@ -119,10 +119,26 @@ body {
     border: 1px solid #ccc;  
   }
 }
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
 </style>
 </head>
 <body>
+
 <h1 style="color:green"><i>medApp</i></h1>
+
 <div class="topnav">
   <a href="https://nat-cyber.github.io">Home</a>
   <div class="dropdown">
@@ -141,7 +157,7 @@ body {
       <a href="#"><i>Help</i></a>
     </div>
   </div> 
-  <a href="login.html">Inbox</a>
+  <a href="#">Inbox</a>
   <div class="dropdown">
     <button class="dropbtn">MedCentre 
       <i class="fa fa-caret-down"></i>
@@ -167,7 +183,24 @@ body {
   </div>
 </div>
 
+<div class="content">
+ 
+</div>
 
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 
 </body>
 </html>
