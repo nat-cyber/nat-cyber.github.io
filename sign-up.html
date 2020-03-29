@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>sign up</title>
 <style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box}
 
@@ -87,30 +92,31 @@ button:hover {
 .sticky + .content {
   padding-top: 60px;
 }
-.btn {
-  background-color: Green;
-  border: none;
-  color: white;
-  padding: 12px 16px;
-  font-size: 18px;
-  cursor: pointer;
-  width: 20%;
+
+a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: DarkGreen;
+.previous {
+  background-color: #f1f1f1;
+  color: black;
 }
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
 </style>
 </head>
 <body>
 <h1 style="color:black">Welcome to <i style="color:green">medApp</i></h1>
-
-<button class="btn" href="https://nat-cyber.github.io/"><i class="fa fa-home"></i> Home</button>
  <div class="content">
  <form action="home.html" action="index.html" style="border:1px solid #ccc">
   <div class="container">
-     <h2 style="color:black">Sign up to <i style="color:green">medApp</i></h2>
+     <h1 style="color:green"><i>medApp</i></h2>
       <p>Please fill in this form to create an account.</p>
       <hr>
       <label for="name"><b>Name</b></label>
@@ -159,8 +165,13 @@ function myFunction() {
   }
 }
 </script>
- 
+<a  align="centre" href="index.html" class="previous">&laquo; Previous</a>
+<a  align="centre" href="sign-up.html" class="next">Next &raquo;</a>
 
 
+
+
+
+  
 </body>
-</html>
+</html> 
