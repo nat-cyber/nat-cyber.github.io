@@ -70,11 +70,24 @@ button:hover {
      width: 100%;
   }
 }
+  .content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
 </style>
 <body>
 <h1 style="color:black">Welcome to <i style="color:green">medApp</i></h1>
-  
-<form action="home.html" style="border:1px solid #ccc">
+ <div class="content">
+ <form action="home.html" style="border:1px solid #ccc">
   <div class="container">
      <h1 style="color:green"><i>medApp</i></h2>
       <p>Please fill in this form to create an account.</p>
@@ -108,6 +121,24 @@ button:hover {
     </div>
   </div>
 </form>
+
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+ 
 
 </body>
 </html>
