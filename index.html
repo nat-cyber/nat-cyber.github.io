@@ -133,9 +133,38 @@ body {
 .sticky + .content {
   padding-top: 60px;
 }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .load {
+    animation: slide 2s;
+  }
+  .slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: centre;
+    width: 100%;
+    height: 100vh;
+    animation icon: slide 30s infinite;
+  }
+  @keyframes slide {
+    0% {
+      background-image:url('img.jpg1.jpg');
+    }
+    0% {
+      background-image:url('img.jpg2.jpg');
+    }
+    0% {
+      background-image:url('img.jpg3.jpg');
+    }
 </style>
 </head>
 <body>
+  <div class="slide">
+    <div class="load">
+    </div>
+  </div>
 
   <h1 style="color:green"><i>medApp</i></h1>
 
