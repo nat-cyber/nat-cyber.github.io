@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-
+    <meta charset="UTF-8">
     <title>med.app</title>
   </head>
+  <script src="js/jquery.js"></script>
+   <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+   <script>
+     x = navigator.geolocation;
+     x.getCurrentPosition(success, failure);
+     function success(position) {
+       var mylat = position.coords.latitude;
+       var mylong = position.coords.longitude;
+       $('#lat').html(mylat);
+       $('#long').html(mylong);
+     }
+     function failure() {
+       $('#lat').html("<p>It didn't work, co-ordinates not avilable!</p>");
+     }
+  </script>
 
   <body>
     <h1 style="color:black">Map of <i style="color:green">hospitals</i> in your country</h1>
     <hr />
-    <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d1666004.6600087949!2d33.602436!3d35.357747!3m2!1i1024!2i768!4f13.1!2m1!1smedical%20centres%20in%20%0ANorthern%20Cyprus!5e0!3m2!1sen!2sus!4v1585614019235!5m2!1sen!2sus" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    
+    <div id="map">
+      
+    </div>
+    
+    <div id="lat"></div>
+    <div id="long"></div>
+    
     
       </body>
 </html>
