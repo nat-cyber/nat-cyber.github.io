@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>med.app</title>
@@ -140,7 +140,17 @@ body {
 </head>
 <body>
 
-  <h1 style="color:green"><i>medApp</i></h1>
+ <div id="google_translate_element" align="right"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<h1 style="color:green"><i>medApp</i></h1>
 
 <div class="topnav">
   <a href="https://nat-cyber.github.io">Home</a>
@@ -156,12 +166,12 @@ body {
       <i class="fa fa-caret-down"></i>
     </button>
   <div class="dropdown-content">
-      <a>Please choose
-    if you are ordinary person or 
-        medical professional to access
+      <a>Please login
+     to access
     this page</a>
     </div>
   </div>
+  
   <div class="search-container">
     <form action="/action_page.php">
       <input type="text" placeholder="Search.." name="search">
@@ -190,10 +200,9 @@ function myFunction() {
 </script>
   <br />
 <br />
-  <br />
-  <br />
- <center><h2 text-align="center"><i>Improving  <i style="color:green">health services</i> through social networking...</i></h2></center>
+<br />
+  <center><h2 text-align="center"><i>Improving  <i style="color:green">health services </i>  through social networking...</i></h2></center>
+
 
 </body>
 </html>
-
