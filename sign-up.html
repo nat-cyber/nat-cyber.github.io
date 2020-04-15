@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
 	
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 * {
@@ -16,12 +17,11 @@ body {
 	background: #f6f5f7;
 	display: flex;
 	justify-content: center;
-	align-items: right;
+	align-items: center;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
-	 
 }
 
 h1 {
@@ -54,8 +54,8 @@ a {
 
 button {
 	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	border: 1px solid #228B22;
+	background-color: #228B22;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -79,7 +79,7 @@ button.ghost {
 }
 
 form {
-	background-color: #008000;
+	background-color: #FFFFFF;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -168,7 +168,7 @@ input {
 }
 
 .overlay {
-	background: #FF416C;
+	background: #008000;
 	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
 	background: linear-gradient(to right, #FF4B2B, #FF416C);
 	background-repeat: no-repeat;
@@ -188,6 +188,7 @@ input {
 }
 
 .overlay-panel {
+	background: #008000;
 	position: absolute;
 	display: flex;
 	align-items: center;
@@ -219,20 +220,9 @@ input {
 	transform: translateX(20%);
 }
 
-.social-container {
-	margin: 20px 0;
-}
 
-.social-container a {
-	border: 1px solid #DDDDDD;
-	border-radius: 50%;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 5px;
-	height: 40px;
-	width: 40px;
-}
+
+
 
 footer {
     background-color: #222;
@@ -274,14 +264,13 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-	<center><h1 style="color:black">Welcome to <i style="color:green">medApp</i></h1></center>
-	
-	
+<h2>Weekly Coding Challenge #1: Sign in/up Form</h2>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
 		<form action="#">
 			<h1>Create Account</h1>
-			<br />
+	
+			
 			<input type="text" placeholder="Name" />
 			<input type="text" placeholder="Surname" />
 			<input type="email" placeholder="Email" />
@@ -292,7 +281,8 @@ function googleTranslateElementInit() {
 	<div class="form-container sign-in-container">
 		<form action="#">
 			<h1>Sign in</h1>
-			<br />
+		
+			
 			<input type="email" placeholder="Email" />
 			<input type="password" placeholder="Password" />
 			<a href="#">Forgot your password?</a>
@@ -303,21 +293,20 @@ function googleTranslateElementInit() {
 		<div class="overlay">
 			<div class="overlay-panel overlay-left">
 				<h1>Welcome Back!</h1>
-				<p>To keep connected with us please sign in the required info</p>
+				<p>To keep connected with us please login with your personal info</p>
 				<button class="ghost" id="signIn">Sign In</button>
 			</div>
 			<div class="overlay-panel overlay-right">
-				<h1>Welcome!</h1>
-				<p>We improve your healthy life by providing an easy and quick access on your health services on a 
-				technological level through connecting you to the world</p>
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
 				<button class="ghost" id="signUp">Sign Up</button>
 			</div>
 		</div>
 	</div>
-</div>		
+</div>
 
-	<script>
-		const signUpButton = document.getElementById('signUp');
+<script>
+	const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
 
