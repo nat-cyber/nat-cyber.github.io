@@ -10,13 +10,9 @@ body {
   margin: 15;
   background: #ecf0f1;
   font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
-  height: 100vh;
-   
+  background: url('https://i.pinimg.com/originals/1f/be/44/1fbe44e7b122b606b3e2cfbee534d3f6.jpg');
+  background-repeat: no-repeat;
+ 
 }
 
 .topnav {
@@ -146,7 +142,17 @@ body {
 	box-sizing: border-box;
 }
 
-
+body {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+	 
+}
 
 h1 {
 	font-weight: bold;
@@ -448,61 +454,10 @@ function myFunction() {
   <br />
   <br />
 <br />
+<br />
   <center><h2 text-align="center"><i>Improving  <i style="color:darkgreen">health services </i>  through social networking...</i></h2></center>
- <hr />
-  <br />
-  <div class="container" id="container">
-	<div class="form-container sign-up-container">
-		<form action="#">
-			<h1>Create Account</h1>
-			<br />
-			<input type="text" placeholder="Name" />
-			<input type="text" placeholder="Surname" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<button>Sign Up</button>
-		</form>
-	</div>
-	<div class="form-container sign-in-container">
-		<form action="#">
-			<h1>Sign in</h1>
-			<br />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<a href="#">Forgot your password?</a>
-			<button>Sign In</button>
-		</form>
-	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1>Welcome Back!</h1>
-				<p>To keep connected with us please sign in the required info</p>
-				<button class="ghost" id="signIn">Sign In</button>
-			</div>
-			<div class="overlay-panel overlay-right">
-				<h1>Welcome!</h1>
-				<p>We improve your healthy life by providing an easy and quick access on your health services on a 
-				technological level through connecting you to the world</p>
-				<button class="ghost" id="signUp">Sign Up</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-	<script>
-		const signUpButton = document.getElementById('signUp');
-const signInButton = document.getElementById('signIn');
-const container = document.getElementById('container');
-
-signUpButton.addEventListener('click', () => {
-	container.classList.add("right-panel-active");
-});
-
-signInButton.addEventListener('click', () => {
-	container.classList.remove("right-panel-active");
-});
-	</script>
+ 
+	
 
 </body>
 </html>
