@@ -1,212 +1,87 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>med.app</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <style>
-* {box-sizing: border-box;}
-
 body {
-  margin: 15;
-  background: #ecf0f1;
-  font-family: Arial, Helvetica, sans-serif;
-  background: url('https://i.pinimg.com/originals/1f/be/44/1fbe44e7b122b606b3e2cfbee534d3f6.jpg');
-  background-repeat: no-repeat;
- 
+  font-family: "Lato", sans-serif;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #008000;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.topnav a:hover,  .dropdown:hover .dropbtn {
-  background-color: #006400;
-  color: black;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.topnav a.active {
-  background-color: #2196F3;
-  color: white;
-}
-
-.topnav .search-container {
-  float: right;
-}
-
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-  color: blue;
-}
-
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.topnav .search-container button:hover {
-  background: #ccc;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
+.sidenav {
+  height: 100%;
+  width: 340px;
   position: fixed;
-  top: 0;
-  width: 100%;
+  z-index: 1;
+  top: 30;
+  left: 0;
+  background-color: #008000;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-.sticky + .content {
-  padding-top: 60px;
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
 }
-  
+
+.sidenav a:hover {
+  color: #808080;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.material-icons {
+font-size: 35px;
+color: f1f1f1;
+}
+.title {
+top: 30;
+}
 </style>
 </head>
 <body>
-
- <div id="google_translate_element" align="right"></div>
-
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<h1 style="color:green"><i>medApp</i></h1>
-
-<div class="topnav">
-  <a href="https://nat-cyber.github.io">Home</a>
-  
-    
-    
-    <a href="sign-up.html">Sign In</a>
-     
-    
-      
-  <div class="dropdown">
-    <button class="dropbtn">MedCentre 
-      <i class="fa fa-caret-down"></i>
-    </button>
-  <div class="dropdown-content">
-      <a>Please login
-     to access
-    this page</a>
-    </div>
-  </div>
-  
-  <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
+<div  align="right" style="color:black" class="title">
+<div align="center">
+</div>
+<a href="#"><i class="material-icons">photo_camera</i></a>
+    <a href="#"><i class="material-icons">videocam</i></a>
+</div>
+<hr />
+<div class="sidenav">
+<a href="#"><i class="material-icons">mic</i> Eva</a>
+<br />
+  <a href="#"><i class="material-icons">home</i> Home</a>
+  <a href="#"><i class="material-icons">menu</i> Menu</a>
+  <a href="#"><i class="material-icons">photo_library</i> Photos</a> 
+ <a href="#"><i class="material-icons">forum</i> Chats</a>
+ <a href="#"><i class="material-icons">near_me</i> Nearby Place</a>
+ <a href="#"><i class="material-icons">notifications</i> Notifications</a>
+ <a href="#"><i class="material-icons">calendar_today</i> Calendar</a>
+ <a href="#"><i class="material-icons">store_mall_directory</i> Store</a>
+        <a href="#"><i class="material-icons">account_circle</i> My Account</a>
+        <a href="#"><i class="material-icons">settings</i> Settings</a>
+        <a href="#"><i class="material-icons">exit_to_app</i> Logout</a>
+        <br />
+        <a href="#"><i class="material-icons">help</i> Help</a>
 </div>
 
-<div class="content">
- 
+<div class="main">
+  
 </div>
 
-<script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
-  <br />
-  <br />
-  <br />
-<br />
-<br />
-  <center><h2 text-align="center"><i>Improving  <i style="color:darkgreen">health services </i>  through social networking...</i></h2></center>
- 
-	
-
+   
 </body>
-</html>
+</html> 
