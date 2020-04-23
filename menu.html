@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js" ></script>
+        <title>Healthie</title>
+        <style>
+        *{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background: rgb(243, 242, 241);
+    }
+    nav {
+        width: 100%;
+        justify-content: space-around;
+        background: white;
+        overflow: auto;
+        position: fixed;
+        margin-right: 5%;
+    }
+    ul {
+        padding: 0%;
+        margin: 0 0 0 120px;
+        list-style: none;
+        left: -100%;
+        transition: all .5s;
+    }
+    li {
+        float: left;
+    }
+    .logo {
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-right: 20px;
+        color: #ff54a7;
+        font-size: 25px;
+    } 
+    nav a{
+        width: 100px;
+        display: block;
+        padding: 20px 15px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+        text-align: center;
+    }
+    nav a:hover {
+        background-color: none;
+        color: black;
+    }
+    a.active {
+        background-color: #d3d3d3;
+    }
+    
+   .material-icons {
+        font-size: 35px;
+    }
+    .sidenav a .fa-fw{
+font-size: 28px;
+color: darkgreen;
+display: flex;
+align-items: center;
+}        
+.mob {
+  display: none;
+}
+.myLinks {
+  display: none;
+}
+@media screen and (max-width: 1315px){
+  .mob {
+    display: block;
+    background-color: white;
+  }
+  
+  .mob a{
+    margin-left: 5%;
+    color: gray;
+  }
+  .mob a:hover {
+    color: black;
+  }
+  .mob .active {
+    color: black;
+  }
+  .top-mob {
+    display: block;
+    margin-left: 3%;
+    color: #ff54a7;
+  }
+  .sidenav1 {
+  height: 87%;
+  width: 90%;
+  position: fixed;
+  z-index: 1;
+  top: 13.1%;
+  left: 0;
+  background-color: rgb(243, 242, 241);
+  overflow-x: hidden;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.sidenav1 a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 23px;
+  color: #818181;
+  display: block;
+  display: flex;
+  align-items: center;
+}
+.sidenav1 a .material-icons {
+font-size: 33px;
+color: darkgreen;
+}
+.sidenav1 a .fa-fw {
+font-size: 30px;
+color: darkgreen;
+}
+.sidenav1 a:hover {
+  background: silver;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav1 {padding-top: 15px;}
+  .sidenav1 a {font-size: 18px;}
+}
+  nav  {
+     display: none;
+  }
+  .sidenav {
+    display: none;
+  }
+  
+}
+          
+        .content {
+        padding: 16px;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .sticky + .content {
+        padding-top: 60px;
+    }
+        </style>
+        </head>
+        <body>
+        
+       <nav>
+  <div class="logo"><h3><i>healthie</i></h3></div>
+  <ul>
+    <li><a><i class="material-icons"></i></a></li>
+    <li><a><i class="material-icons"></i></a></li>
+    <li><a><i class="material-icons"></i></a></li>
+      <li><a href="http://127.0.0.1:8000/"><i class="material-icons">home</i></a></li>
+      <li><a href="#"><i class="material-icons">ondemand_video</i></a></li>
+      <li><a href="#"><i class="material-icons">people_alt</i></a></li>
+      <li><a href="#"><i class="material-icons">notifications</i></a></li>
+      <li><a><i class="material-icons"></i></a></li>
+      <li><a><i class="material-icons"></i></a></li>
+      <li><a href="chats/"><i class="material-icons">&nbsp;&nbsp;question_answer</i></a></li>
+      <li><a href="#"><i class="material-icons">add_a_photo</i></a></li>
+      <li><a href="#"><i class="material-icons">videocam</i></a></li>
+    </ul>
+</nav>
+
+   <div class="mob">
+  <div class="top-mob">
+    <h4><i>healthie</i></h4>
+  </div>
+    <a href="http://127.0.0.1:8000/"><i class="material-icons">home</i></a>
+    <a href="#"><i class="material-icons">ondemand_video</i></a>
+    <a href="#"><i class="material-icons">people_alt</i></a>
+    <a href="#"><i class="material-icons">notifications</i></a>
+    <a href="http://127.0.0.1:8000/chats/"><i class="material-icons">question_answer</i></a>
+    <a href="#"><i class="material-icons">add_a_photo</i></a>
+    <a href="#"><i class="material-icons">videocam</i></a>
+    <a href="http://127.0.0.1:8000/" class="active"><i class="material-icons">menu</i></a>
+</div>
+
+<div class="sidenav1">
+    <div id="myLinks">
+    <a href="#"><i class="material-icons">account_circle</i>&nbsp;&nbsp;My Account</a>
+       <a href="#"><i class="fa fa-fw fa-ambulance"></i>&nbsp;&nbsp;Ambulance</a>
+       <a href="#"><i class="material-icons">people_alt</i>&nbsp;&nbsp;Groups</a>
+       <a href="#"><i class="material-icons">local_hospital</i>&nbsp;&nbsp;Local Hospital</a>
+       <a href="#"><i class="material-icons">local_pharmacy</i>&nbsp;&nbsp;Local Pharmacy</a>
+       <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="35" height="35"
+        viewBox="0 0 172 172"
+        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#006400"><path d="M66.9389,6.87328c-0.216,-0.00461 -0.43195,0.01114 -0.645,0.04703c-15.74693,0.21929 -28.87213,5.23432 -38.04156,14.04219c-9.37713,9.00737 -14.49234,21.84452 -14.49234,36.6575c0,10.92813 4.04393,19.44279 8.50594,27.41922c4.46201,7.97643 9.32683,15.54727 11.98625,25.20875v-0.02015c3.07268,11.43447 5.25076,24.52126 8.62688,35.07859c1.68806,5.27867 3.65111,9.95878 6.48359,13.59203c2.83249,3.6334 6.90586,6.22156 11.7175,6.22156c4.7024,0 9.02819,-1.77029 11.8586,-5.18687c2.8304,-3.41659 4.1186,-8.12552 4.1186,-13.70625c0,-13.71153 2.7717,-31.87682 5.57656,-47.56203c0.4743,-2.25318 1.90673,-2.92266 3.48031,-2.92266c1.57801,0 2.86104,0.56749 3.23172,2.80172l0.00672,0.02688v0.02687c2.80597,15.37121 5.59,33.89511 5.59,47.62922c0,5.5792 1.28846,10.28941 4.1186,13.70625c2.82998,3.41692 7.15569,5.18687 11.8586,5.18687c4.82396,0 8.89585,-2.61825 11.72422,-6.27531c2.82837,-3.65706 4.78973,-8.36289 6.47687,-13.65922c3.37306,-10.58882 5.55987,-23.67524 8.62688,-34.9375c2.65943,-9.66153 7.52427,-17.23194 11.98625,-25.20875c4.46002,-7.9733 8.50238,-16.48616 8.50594,-27.40578c0.15693,-14.80982 -4.88033,-27.65556 -14.21687,-36.66422c-9.34237,-9.01427 -22.83753,-14.08922 -39.06281,-14.08922c-7.04877,0 -13.27259,0.94946 -18.80578,2.75469c-5.5332,-1.80522 -11.75701,-2.75469 -18.80578,-2.75469c-0.04123,0 -0.07974,0.00665 -0.12094,0.00672c-0.09607,-0.00853 -0.19246,-0.01301 -0.28891,-0.01344zM104.96031,13.76c14.80352,0 26.38858,4.54108 34.28578,12.16094c7.89719,7.61985 12.25999,18.41673 12.1139,31.65875v0.02016v0.02015c0,9.25249 -3.31904,16.34854 -7.6325,24.05985c-4.31346,7.7113 -9.63565,15.90663 -12.61781,26.74062v0.00672c-3.20236,11.75546 -5.40963,24.84328 -8.53953,34.66875c-1.56495,4.91273 -3.38764,8.97514 -5.36828,11.5361c-1.98064,2.56051 -3.74096,3.60797 -6.28203,3.60797c-3.13341,0 -5.07732,-0.90719 -6.5575,-2.69422c-1.48018,-1.78702 -2.53969,-4.80858 -2.53969,-9.31891c0,-14.63007 -2.85815,-33.28795 -5.69078,-48.81172c-0.88492,-5.33376 -5.56276,-8.55297 -10.01765,-8.55297c-4.45489,0 -9.12078,3.11911 -10.21922,8.4186l-0.01344,0.04703l-0.00672,0.04703c-2.83202,15.8282 -5.6975,34.20615 -5.6975,48.85203c0,4.51223 -1.05977,7.5325 -2.53969,9.31891c-1.47977,1.78643 -3.42358,2.69422 -6.5575,2.69422c-2.55339,0 -4.31894,-1.03907 -6.29547,-3.57437c-1.97653,-2.53531 -3.79081,-6.56463 -5.35484,-11.45547c-3.12807,-9.78167 -5.33437,-22.86704 -8.53281,-34.76953l-0.00672,-0.00672v-0.01344c-2.98202,-10.8339 -8.30438,-19.0298 -12.61781,-26.74062c-4.31343,-7.71083 -7.6325,-14.8055 -7.6325,-24.05985c0,-13.25054 4.44282,-24.06559 12.38266,-31.69234c7.86948,-7.55917 19.32738,-12.07457 33.94313,-12.15422c12.1989,0.92239 22.84692,6.45175 30.37547,15.19109c0.79389,0.95884 2.04383,1.41402 3.26839,1.19024c1.22457,-0.22379 2.23272,-1.09163 2.63617,-2.26928c0.40345,-1.17765 0.13927,-2.48139 -0.69081,-3.40908c-3.12209,-3.62421 -6.74218,-6.7524 -10.72313,-9.3525c3.87147,-0.8838 8.22699,-1.36391 13.12844,-1.36391z"></path></g></g></svg>&nbsp;&nbsp;Dentist</a>
+       <a href="#"><i class="material-icons">ondemand_video</i>&nbsp;&nbsp;Watch Videos</a>
+       <a href="#"><i class="material-icons">satellite</i>&nbsp;&nbsp;Maps</a>
+       <a href="#"><i class="material-icons">event_note</i>Appointments and Schedules</a>
+       <button class="dropdown-btn"><i class="material-icons">arrow_drop_down_circle</i>&nbsp;&nbsp;More</button>
+     <div class="dropdown-container">
+       <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="40" height="40"
+        viewBox="0 0 172 172"
+        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M68.05825,157.66667v-16.59442l-9.374,1.90992c-10.26625,2.09983 -20.06308,-5.23525 -20.93025,-15.67708l-1.94933,-23.36333l-10.37733,-4.32508c-3.5905,-1.49783 -5.01667,-5.83008 -3.01717,-9.16975l13.3945,-22.32775c2.25033,-27.07208 17.62283,-53.78583 57.41217,-53.78583c40.9575,0 60.8665,30.24692 60.8665,60.94533c0,13.07917 -4.83033,24.60675 -11.97908,34.45375c-6.4285,8.84008 -9.53883,19.66175 -9.53883,30.5945v17.33975z" fill="#006400"></path><path d="M93.16667,35.83333c-19.7902,0 -35.83333,16.04313 -35.83333,35.83333c0,19.7902 16.04313,35.83333 35.83333,35.83333c19.7902,0 35.83333,-16.04313 35.83333,-35.83333c0,-19.7902 -16.04313,-35.83333 -35.83333,-35.83333z" fill="#ffffff"></path><path d="M86,50.16667h14.33333v43h-14.33333z" fill="#f44336"></path><path d="M71.66667,64.5h43v14.33333h-43z" fill="#f44336"></path></g></g></svg>Therapist</a>
+      
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="35" height="35"
+        viewBox="0 0 172 172"
+        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#006400"><path d="M96.32,3.5475c-9.48687,0 -17.2,7.71313 -17.2,17.2c0,9.48688 7.71313,17.2 17.2,17.2c9.48688,0 17.2,-7.71312 17.2,-17.2c0,-9.48687 -7.71312,-17.2 -17.2,-17.2zM82.56,44.72c-13.76,0 -13.76,9.9975 -13.76,13.76c0,12.255 5.9125,30.315 5.9125,30.315c1.03469,3.09063 3.15781,5.805 5.9125,7.525l19.2425,11.395c1.03469,0.68531 2.09625,0.9675 3.1175,0.9675c2.06938,0 4.11188,-1.06156 5.4825,-3.1175c1.72,-3.10406 0.63156,-6.88 -2.4725,-8.6l-19.2425,-11.2875l-3.87,-13.545c-0.22844,-0.47031 -0.43,-0.95406 -0.43,-1.505c0,-1.89469 1.54531,-3.44 3.44,-3.44c1.59906,0 2.83531,1.10188 3.225,2.58h0.1075l3.225,11.18l8.6,5.0525h15.91v-17.2l11.5025,17.2h14.835c-7.98187,-11.89219 -23.78437,-35.28687 -26.3375,-37.84c-3.44,-3.44 -10.32,-3.44 -10.32,-3.44zM111.9075,92.88c3.78938,3.48031 5.21375,8.815 3.5475,13.76h32.465c3.80281,0 6.88,-3.07719 6.88,-6.88c0,-3.80281 -3.07719,-6.88 -6.88,-6.88zM74.4975,100.2975v9.7825h9.46l1.72,-2.795l-8.6,-5.0525c-0.05375,-0.02687 -0.05375,-0.08062 -0.1075,-0.1075c-0.87344,-0.5375 -1.69312,-1.15562 -2.4725,-1.8275zM17.2,106.64c-9.48687,0 -17.2,7.71313 -17.2,17.2c0,9.48688 7.71313,17.2 17.2,17.2c9.48688,0 17.2,-7.71312 17.2,-17.2c0,-9.48687 -7.71312,-17.2 -17.2,-17.2zM91.59,110.8325l-3.87,6.1275h-36.12c-7.60562,0 -13.76,6.15438 -13.76,13.76c0,7.60563 6.15438,13.76 13.76,13.76h41.28c3.78938,0 6.88,-3.09062 6.88,-6.88c0,-3.78937 -3.09062,-6.88 -6.88,-6.88h-30.96c-1.89469,0 -3.44,-1.53187 -3.44,-3.44c0,-1.90812 1.54531,-3.44 3.44,-3.44h30.96c7.59219,0 13.76,6.16781 13.76,13.76c0,2.51281 -0.7525,4.85094 -1.935,6.88h56.8675c3.85656,0 6.9875,-3.13094 6.9875,-6.9875c0,-3.85656 -3.13094,-6.9875 -6.9875,-6.9875l-54.5025,-3.5475l5.805,-15.8025c-2.56656,2.80844 -6.1275,4.4075 -9.89,4.4075c-2.33812,0 -4.64937,-0.67187 -6.7725,-2.0425zM10.32,144.48c-5.68406,0 -10.32,4.63594 -10.32,10.32v17.2h172v-13.76c0,-3.99094 -2.88906,-6.88 -6.88,-6.88h-127.065l-2.365,-2.795c-2.02906,-2.52625 -5.06594,-4.085 -8.17,-4.085z"></path></g></g></svg>&nbsp;&nbsp;Fitness Trainer</a>
+       <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="35" height="35"
+        viewBox="0 0 172 172"
+        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#006400"><path d="M113.52,10.32c-18.25264,0 -30.15794,7.95801 -35.56906,23.59625c0.40248,0.23392 0.80754,0.46811 1.1825,0.70547c5.70696,-3.61888 14.53776,-7.10172 27.50656,-7.10172c2.31512,0 4.56074,0.20479 6.76578,0.49719c2.41488,-6.06472 3.55422,-12.07279 3.55422,-14.25719c0,-1.89888 -1.53768,-3.44 -3.44,-3.44zM62.2089,10.33344c-1.33128,-0.11304 -2.66014,0.56432 -3.32578,1.82078c-0.88752,1.67528 -0.24747,3.75498 1.42437,4.64937c0.42656,0.23048 7.47227,4.10682 11.87203,12.77906c1.03544,-2.63848 2.24196,-5.09056 3.6214,-7.33687c-5.29072,-7.72624 -11.82435,-11.28857 -12.28187,-11.52938c-0.41968,-0.22188 -0.8664,-0.34529 -1.31016,-0.38297zM51.6,34.4c-24.3036,0 -41.28,18.39024 -41.28,44.72c0,24.44464 12.98256,54.68294 37.84,70.20422c0,0 1.6684,1.07602 3.44,2.03578v-30.96c0,-5.70008 4.61992,-10.32 10.32,-10.32h75.68c1.59616,0 3.08589,-0.39468 4.43437,-1.0414c3.87,-10.04824 5.88563,-20.41388 5.88563,-29.9186c0,-26.32976 -16.9764,-44.72 -41.28,-44.72c-15.10504,0 -23.55024,5.24557 -27.52,8.76125c-3.96976,-3.51568 -12.41496,-8.76125 -27.52,-8.76125zM154.8,82.94297v16.81703c0,8.30416 -5.92024,15.25102 -13.76,16.85063v24.42937c0,1.89888 -1.53768,3.44 -3.44,3.44c-1.90232,0 -3.44,-1.54112 -3.44,-3.44v-24.08h-13.76v20.64c0,1.89888 -1.53768,3.44 -3.44,3.44c-1.90232,0 -3.44,-1.54112 -3.44,-3.44v-20.64h-13.76v24.08c0,1.89888 -1.53768,3.44 -3.44,3.44c-1.90232,0 -3.44,-1.54112 -3.44,-3.44v-24.08h-13.76v17.2c0,1.89888 -1.53768,3.44 -3.44,3.44c-1.90232,0 -3.44,-1.54112 -3.44,-3.44v-17.2h-10.32c-1.90232,0 -3.44,1.54112 -3.44,3.44v37.84c0,1.89888 1.53768,3.44 3.44,3.44h75.68c12.1088,0 22.16284,-8.98528 23.83813,-20.64c0.16168,-1.12488 0.24187,-2.27384 0.24187,-3.44v-37.84c0,-6.54288 -2.6316,-12.47575 -6.88,-16.81703z"></path></g></g></svg>&nbsp;&nbsp;Dietician</a>
+       <a href="#"><i class="fa fa-fw fa-heartbeat"></i>&nbsp;&nbsp;Health</a>
+       <a href="#"><i class="material-icons">help</i>&nbsp;&nbsp;Help</a>
+     </div>
+       <a href="#"><i class="material-icons">store</i>&nbsp;&nbsp;Store</a>
+       <button class="dropdown-btn"><i class="material-icons">add_circle</i>&nbsp;&nbsp;Create</button>
+     <div class="dropdown-container">
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="35" height="35"
+        viewBox="0 0 172 172"
+        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#006400"><path d="M161.86589,11.46667c-2.59433,0 -5.18867,0.98945 -7.16667,2.96745l-3.01224,3.01224l14.33333,14.33333l3.01224,-3.01224c3.956,-3.956 3.956,-10.37733 0,-14.33333c-1.978,-1.978 -4.57233,-2.96745 -7.16667,-2.96745zM34.4,22.93333c-6.33533,0 -11.46667,5.13133 -11.46667,11.46667v103.2c0,6.33533 5.13133,11.46667 11.46667,11.46667h103.2c6.33533,0 11.46667,-5.13133 11.46667,-11.46667v-72.65208l-11.46667,11.46667v61.18542h-103.2v-80.26667h61.18542l34.4,-34.4zM143.57969,25.55365l-60.59193,60.59193l-2.72109,17.05442l17.05442,-2.72109l60.59193,-60.59193z"></path></g></g></svg>&nbsp;&nbsp;New Account</a>
+      <a href="#"><i class="material-icons">group_add</i>&nbsp;&nbsp;Group</a>
+      <a href="#"><i class="material-icons">person_add</i>&nbsp;&nbsp;Add a person</a>
+      <a href="#"><i class="material-icons">flag</i>&nbsp;&nbsp;Page</a>
+      <a href="#"><i class="material-icons">store</i>&nbsp;&nbsp;a Store</a>
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="35" height="35"
+        viewBox="0 0 172 172"
+        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M139.32,120.4c0,10.449 -8.471,18.92 -18.92,18.92h-68.8c-10.449,0 -18.92,-8.471 -18.92,-18.92v-68.8c0,-10.449 8.471,-18.92 18.92,-18.92h68.8c10.449,0 18.92,8.471 18.92,18.92z" fill="#006400"></path><path d="M120.4,141.04h-68.8c-11.38124,0 -20.64,-9.25876 -20.64,-20.64v-68.8c0,-11.38124 9.25876,-20.64 20.64,-20.64h60.2c0.94944,0 1.72,0.77056 1.72,1.72c0,0.94944 -0.77056,1.72 -1.72,1.72h-60.2c-9.48408,0 -17.2,7.71592 -17.2,17.2v68.8c0,9.48408 7.71592,17.2 17.2,17.2h68.8c9.48408,0 17.2,-7.71592 17.2,-17.2v-60.2c0,-0.94944 0.77056,-1.72 1.72,-1.72c0.94944,0 1.72,0.77056 1.72,1.72v60.2c0,11.38124 -9.25876,20.64 -20.64,20.64z" fill="#1f212b"></path><path d="M114.38,131.58h-56.76c-9.49956,0 -17.2,-7.70044 -17.2,-17.2v-56.76c0,-9.49956 7.70044,-17.2 17.2,-17.2h56.76c9.49956,0 17.2,7.70044 17.2,17.2v56.76c0,9.49956 -7.70044,17.2 -17.2,17.2z" fill="#fdfcee"></path><path d="M114.38,132.44h-56.76c-9.9588,0 -18.06,-8.1012 -18.06,-18.06v-56.76c0,-9.9588 8.1012,-18.06 18.06,-18.06h48.16c0.47472,0 0.86,0.38528 0.86,0.86c0,0.47472 -0.38528,0.86 -0.86,0.86h-48.16c-9.00936,0 -16.34,7.33064 -16.34,16.34v56.76c0,9.00936 7.33064,16.34 16.34,16.34h56.76c9.00936,0 16.34,-7.33064 16.34,-16.34v-29.24c0,-0.47472 0.38528,-0.86 0.86,-0.86c0.47472,0 0.86,0.38528 0.86,0.86v29.24c0,9.9588 -8.1012,18.06 -18.06,18.06z" fill="#1f212b"></path><path d="M131.58,82.56c-0.47472,0 -0.86,-0.38528 -0.86,-0.86v-6.88c0,-0.47472 0.38528,-0.86 0.86,-0.86c0.47472,0 0.86,0.38528 0.86,0.86v6.88c0,0.47472 -0.38528,0.86 -0.86,0.86zM131.58,72.24c-0.47472,0 -0.86,-0.38528 -0.86,-0.86v-5.16c0,-0.47472 0.38528,-0.86 0.86,-0.86c0.47472,0 0.86,0.38528 0.86,0.86v5.16c0,0.47472 -0.38528,0.86 -0.86,0.86z" fill="#1f212b"></path><path d="M155.9868,31.4588l-0.3956,0.43l-54.2144,54.2144c-0.258,0.258 -0.5332,0.4816 -0.8428,0.6708c-0.2752,0.1892 -0.5848,0.3612 -0.9116,0.4816c-4.2484,1.6512 -20.5368,7.998 -20.7088,8.084c-0.6192,0.2408 -1.3588,0.1204 -1.8748,-0.3784c-0.4988,-0.516 -0.6192,-1.2556 -0.3784,-1.8748c0.086,-0.172 6.4328,-16.4604 8.084,-20.7088c0.1204,-0.3268 0.2924,-0.6364 0.4816,-0.9116c0.1892,-0.3096 0.4128,-0.5848 0.6708,-0.8428l54.2144,-54.2144l0.43,-0.3956c1.7716,-1.7544 6.9316,-2.7864 12.5904,2.8552c5.6416,5.6588 4.6096,10.8188 2.8552,12.5904z" fill="#fbb822"></path><path d="M100.534,86.774c-0.2752,0.1892 -0.5848,0.3612 -0.9116,0.4816c-4.2484,1.6512 -20.5368,7.998 -20.7088,8.084c-0.6192,0.2408 -1.3588,0.1204 -1.8748,-0.3784c-0.4988,-0.516 -0.6192,-1.2556 -0.3784,-1.8748c0.086,-0.172 6.4328,-16.4604 8.084,-20.7088c0.1204,-0.3268 0.2924,-0.6364 0.4816,-0.9116z" fill="#fefdef"></path><path d="M79.39348,86.27348c-1.48436,3.7152 -2.69524,6.74068 -2.72792,6.8198c-0.25112,0.62092 -0.12556,1.36052 0.3784,1.86276c0.50396,0.50396 1.24184,0.62952 1.86276,0.3784c0.07912,-0.03268 3.1046,-1.24184 6.8198,-2.72792z" fill="#444445"></path><path d="M130.71918,25.80013l6.88006,-6.8803l15.48036,15.47982l-6.88006,6.8803z" fill="#7a91c9"></path><path d="M153.1316,18.8684c-5.6588,-5.6416 -10.8188,-4.6096 -12.5904,-2.8552l-0.43,0.3956l-2.5112,2.5112l15.48,15.48l2.5112,-2.5112l0.3956,-0.43c1.7544,-1.7716 2.7864,-6.9316 -2.8552,-12.5904z" fill="#f58f8f"></path><path d="M78.26,96.32c-0.6708,0 -1.32784,-0.26144 -1.8232,-0.7568c-0.73444,-0.73444 -0.95804,-1.8318 -0.5676,-2.795c0.07568,-0.19092 3.1046,-7.94984 5.51776,-14.13496l2.56108,-6.56524c0.30272,-0.77744 0.7568,-1.4706 1.34848,-2.06228l54.66504,-54.62548c2.24288,-2.24288 8.02552,-2.85692 13.77032,2.88616c5.7448,5.7448 5.12904,11.52916 2.85864,13.79956l-0.36464,0.40076l-54.23332,54.23676c-0.59168,0.59168 -1.28656,1.04576 -2.06228,1.34848l-6.56524,2.56108c-6.18512,2.41316 -13.94404,5.44208 -14.13668,5.51776c-0.31304,0.12728 -0.64328,0.1892 -0.96836,0.1892zM144.5488,15.47484c-1.60132,0 -2.80016,0.5504 -3.39872,1.14896l-0.45924,0.4214l-54.17828,54.17828c-0.42312,0.42312 -0.74648,0.91848 -0.9632,1.4706l-2.56108,6.56524c-2.42864,6.22124 -5.47648,14.03348 -5.52636,14.15732c-0.13072,0.31992 -0.05676,0.68628 0.1892,0.93224c0.24596,0.24424 0.6106,0.3182 0.93224,0.1892c0.12384,-0.04988 7.93436,-3.09772 14.1556,-5.52636l6.56524,-2.56108c0.55384,-0.215 1.0492,-0.54008 1.4706,-0.9632l54.57044,-54.60828c1.41556,-1.41728 2.54388,-6.02 -2.83112,-11.395c-3.053,-3.05472 -5.85832,-4.00932 -7.96532,-4.00932z" fill="#1f212b"></path><path d="M78.51236,86.6087l1.2162,-1.21624l6.8803,6.88006l-1.2162,1.21624z" fill="#1f212b"></path><path d="M79.15697,87.25329l1.2162,-1.21624l5.58986,5.58967l-1.2162,1.21624z" fill="#1f212b"></path><path d="M146.2,42.14c-0.22016,0 -0.44032,-0.08428 -0.60888,-0.25112l-15.48,-15.48c-0.3354,-0.3354 -0.3354,-0.88064 0,-1.21604c0.3354,-0.3354 0.88064,-0.3354 1.21604,0l15.48,15.48c0.3354,0.3354 0.3354,0.88064 0,1.21604c-0.16684,0.16684 -0.387,0.25112 -0.60716,0.25112zM147.06,29.24c-0.22016,0 -0.44032,-0.08428 -0.60888,-0.25112l-9.46,-9.46c-0.3354,-0.3354 -0.3354,-0.88064 0,-1.21604c0.3354,-0.3354 0.88064,-0.3354 1.21604,0l9.46,9.46c0.3354,0.3354 0.3354,0.88064 0,1.21604c-0.16684,0.16684 -0.387,0.25112 -0.60716,0.25112zM153.08,35.26c-0.22016,0 -0.44032,-0.08428 -0.60888,-0.25112l-2.58,-2.58c-0.3354,-0.3354 -0.3354,-0.88064 0,-1.21604c0.3354,-0.3354 0.88064,-0.3354 1.21604,0l2.58,2.58c0.3354,0.3354 0.3354,0.88064 0,1.21604c-0.16684,0.16684 -0.387,0.25112 -0.60716,0.25112zM149.64,38.7c-0.22016,0 -0.44032,-0.08428 -0.60888,-0.25112l-15.48,-15.48c-0.3354,-0.3354 -0.3354,-0.88064 0,-1.21604c0.3354,-0.3354 0.88064,-0.3354 1.21604,0l15.48,15.48c0.3354,0.3354 0.3354,0.88064 0,1.21604c-0.16684,0.16684 -0.387,0.25112 -0.60716,0.25112z" fill="#1f212b"></path><path d="M100.62,67.08c-0.22016,0 -0.44032,-0.08428 -0.60888,-0.25112c-0.3354,-0.3354 -0.3354,-0.88064 0,-1.21604l35.26,-35.26c0.3354,-0.3354 0.88064,-0.3354 1.21604,0c0.3354,0.3354 0.3354,0.88064 0,1.21604l-35.26,35.26c-0.16684,0.16684 -0.387,0.25112 -0.60716,0.25112zM95.46,82.56c-0.22016,0 -0.44032,-0.08428 -0.60888,-0.25112c-0.3354,-0.3354 -0.3354,-0.88064 0,-1.21604l36.12,-36.12c0.3354,-0.3354 0.88064,-0.3354 1.21604,0c0.3354,0.3354 0.3354,0.88064 0,1.21604l-36.12,36.12c-0.16684,0.16684 -0.387,0.25112 -0.60716,0.25112zM135.02,43c-0.22016,0 -0.44032,-0.08428 -0.60888,-0.25112c-0.3354,-0.3354 -0.3354,-0.88064 0,-1.21604l6.02,-6.02c0.3354,-0.3354 0.88064,-0.3354 1.21604,0c0.3354,0.3354 0.3354,0.88064 0,1.21604l-6.02,6.02c-0.16684,0.16684 -0.387,0.25112 -0.60716,0.25112zM93.74,73.96c-0.22016,0 -0.44032,-0.08428 -0.60888,-0.25112c-0.3354,-0.3354 -0.3354,-0.88064 0,-1.21604l3.44,-3.44c0.3354,-0.3354 0.88064,-0.3354 1.21604,0c0.3354,0.3354 0.3354,0.88064 0,1.21604l-3.44,3.44c-0.16684,0.16684 -0.387,0.25112 -0.60716,0.25112z" fill="#1f212b"></path><path d="M84.53172,71.98821l1.2162,-1.21624l15.48036,15.47982l-1.2162,1.21624z" fill="#1f212b"></path></g></g></svg>&nbsp;&nbsp;an Ad</a>
+     </div>
+       <a href="#"><i class="material-icons">settings</i>Settings</a>
+       <a href="#"><i class="material-icons">logout</i>Logout</a>
+       <a href="#"><i class="material-icons">mic</i>Eva</a> 
+    </div>   
+  </div>
+  <script>
+function myFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+    <script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+        </body>
+        </html>
+        
