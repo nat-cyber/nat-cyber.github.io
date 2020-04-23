@@ -119,7 +119,87 @@ background: silver;
 .material-icons {
 font-size: 31px;
 }
+  .sidenav a .fa-fw{
+font-size: 28px;
+color: darkgreen;
+display: flex;
+align-items: center;
+}        
+.mob {
+  display: none;
+}
+.myLinks {
+  display: none;
+}
+@media screen and (max-width: 1315px){
+  .mob {
+    display: block;
+    background-color: white;
+  }
+  
+  .mob a{
+    margin-left: 5%;
+    color: gray;
+  }
+  .mob a:hover {
+    color: black;
+  }
+  .mob .active {
+    color: black;
+  }
+  .top-mob {
+    display: block;
+    margin-left: 3%;
+    color: #ff54a7;
+  }
+  .sidenav1 {
+  height: 87%;
+  width: 90%;
+  position: fixed;
+  z-index: 1;
+  top: 13.1%;
+  left: 0;
+  background-color: rgb(243, 242, 241);
+  overflow-x: hidden;
+  padding-top: 20px;
+  text-align: center;
+}
 
+.sidenav1 a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 23px;
+  color: #818181;
+  display: block;
+  display: flex;
+  align-items: center;
+}
+.sidenav1 a .material-icons {
+font-size: 33px;
+color: darkgreen;
+}
+.sidenav1 a .fa-fw {
+font-size: 30px;
+color: darkgreen;
+}
+.sidenav1 a:hover {
+  background: silver;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav1 {padding-top: 15px;}
+  .sidenav1 a {font-size: 18px;}
+}
+  nav  {
+     display: none;
+  }
+  .sidenav {
+    display: none;
+  }
+  
+}
+          
         .content {
         padding: 16px;
     }
@@ -152,6 +232,21 @@ font-size: 31px;
         <li><a href="#"><i class="material-icons">arrow_drop_down_circle</i></a></li>
         </ul>
 </nav>
+    <div class="mob">
+    <div class="top-mob">
+      <h4><i>healthie</i></h4>
+    </div>
+      <a href="http://127.0.0.1:8000/"><i class="material-icons">home</i></a>
+      <a href="#"><i class="material-icons">ondemand_video</i></a>
+      <a href="#"><i class="material-icons">people_alt</i></a>
+      <a href="#"><i class="material-icons">notifications</i></a>
+      <a href=""  class="active"><i class="material-icons">question_answer</i></a>
+      <a href="#"><i class="material-icons">add_a_photo</i></a>
+      <a href="#"><i class="material-icons">videocam</i></a>
+      <a href="http://127.0.0.1:8000/bookmarks/"><i class="material-icons">menu</i></a>
+  </div>
+  <br>
+  <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Type to search.." title="Type in a category">  
 <br />
 <br />
 <br />
