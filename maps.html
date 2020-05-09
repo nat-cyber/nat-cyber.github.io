@@ -29,6 +29,8 @@
         iconZoom: 200,     
         crossOrigin: true
       }).addTo(map);
+      document.getElementsByClassName( 'leaflet-control-attribution' )[0].style.display = 'none';
+      
       map.locate({setView: true, maxZoom: 10});
       function onLocationFound(e) {
     var radius = e.accuracy;
